@@ -1,0 +1,10 @@
+trigger:
+  branches:
+    include: ['*']
+  tags:
+    include: ['*']
+
+jobs:
+  - job: 'Format Rust code'
+  pool:
+    vmImage
